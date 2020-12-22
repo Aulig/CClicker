@@ -43,8 +43,8 @@
 	<repositories>
 		<!-- 3rd party repo, used because I'm too lazy to register on the central -->
 		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
 		</repository>
 	</repositories>
 	<dependencies>
@@ -68,24 +68,16 @@
 			<artifactId>Simplified-JNA</artifactId>
 			<version>1.0</version>
 		</dependency>
-		<!-- Profile-specific tools dependency -->
-		<dependency>
-			<groupId>com.sun</groupId>
-			<artifactId>tools</artifactId>
-			<scope>system</scope>
-			<version>hello-darkness-my-old-friend</version>
-			<systemPath>${toolspath}/tools.jar</systemPath>
-		</dependency>
 	</dependencies>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
-		<plugins>		
+		<plugins>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.6.1</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>8</source>
+					<target>8</target>
 				</configuration>
 			</plugin>
 			<plugin>

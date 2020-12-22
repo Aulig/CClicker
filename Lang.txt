@@ -31,4 +31,4 @@
 401:Initial release
 402:Fixed issue where the statistics key-interceptor would never be destroyed.\n\nRefactored code and added documentation to a few more classes.
 403:Added start argument to inject into other JVM processes. UI tab for this is also available.\n\nAdded start argument to change settings directory.\n\nAdded a graph display to statistics. Graph accuracy is customizable.\n\nSliders now show their numerical value.\n\nFixed content on the Home tab not being padded making it harder to read.\n\nFixed content on the Home tab having an ugly border.\n\nFixed statistic data not being padded making it harder to read.\n\nFixed combo-box going off the page.\n\nMisc. code changes.
-404:Something
+404:Forked from Col-E/CClicker because (like he mentioned in pom.xml) it wasn't working with Java 9+. This fork removes the agent package which seems to have been responsible for the injecting into other JVM processes. Because of that it should be compatible with Java 9+ now. Also fixed a small bug which made it always show the default settings instead of the loaded ones.
