@@ -70,7 +70,7 @@ public class SwingUtil {
 	 * @return
 	 */
 	public static ComboBoxModel<String> getWindowsModel() {
-		String[] a = null;
+		String[] a;
 		List<String> l = new ArrayList<>();
 		for (Entry<HWND, String> e : Windows.getWindows().entrySet()) {
 			String s = e.getValue();
@@ -84,7 +84,7 @@ public class SwingUtil {
 		for (int i = 0; i < l.size(); i++) {
 			a[i] = l.get(i);
 		}
-		return new DefaultComboBoxModel<String>(a);
+		return new DefaultComboBoxModel<>(a);
 	}
 
 	/**
@@ -119,7 +119,7 @@ public class SwingUtil {
 	/**
 	 * Build's a titled verion page.
 	 * 
-	 * @param i
+	 * @param version
 	 * @return
 	 */
 	public static JPanel getVersionPage(String version) {

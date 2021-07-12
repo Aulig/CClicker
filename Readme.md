@@ -4,6 +4,8 @@ Forked from Col-E/CClicker because (like he mentioned in pom.xml) it wasn't work
 This fork removes the agent package which seems to have been responsible for the injecting into other JVM processes. Because of that it should be compatible with Java 9+ now. However, not all references to the agent code have been removed, so there's some unnecessary stuff left still.
 Also fixed a small bug which made it always show the default settings instead of the loaded ones.
 
+NOW HARDCODED VALUES -> see clickerthread.java because it kept breaking
+
 Build a jar with
 mvn clean compile assembly:single
 

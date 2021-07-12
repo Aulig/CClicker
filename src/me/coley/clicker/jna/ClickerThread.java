@@ -23,10 +23,18 @@ public class ClickerThread extends Thread {
 				Mouse.mouseLeftClick(-1, -1);
 			}
 			try {
+				/*
 				double dev = gui.settings.getNumericSetting(Values.SET_DEV_DELAY).getCurrent();
 				double mean = gui.settings.getNumericSetting(Values.SET_AVG_DELAY).getCurrent();
 				int min = gui.settings.getNumericSetting(Values.SET_MIN_DELAY).getCurrent();
 				int max = gui.settings.getNumericSetting(Values.SET_MAX_DELAY).getCurrent();
+				 */
+
+				// just hardcoding because the ui keeps breaking
+				double dev = 32;
+				double mean = 85;
+				int min = 48;
+				int max = 149;
 				// Gaussian random sleep. Tends to sleep with times
 				// around the mean. Times near the bounds (min/max) are
 				// less common.

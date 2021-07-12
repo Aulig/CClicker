@@ -162,7 +162,7 @@ public class Values implements Saveable {
 					intMap.get(key).setValue(value);
 				}
 			}
-			if (fileNumData.exists()) {
+			if (fileBoolData.exists()) {
 				List<String> linesB = FileUtils.readLines(fileBoolData, StandardCharsets.UTF_8);
 				for (String line : linesB) {
 					if (line.startsWith("/"))
